@@ -82,22 +82,20 @@ class _HorizontalWeekCalendarPackageState
                       const SizedBox(
                         height: 10,
                       ),
-                      // Container(
-                      //   decoration: BoxDecoration(
-                      //     borderRadius: BorderRadius.circular(75),
-                      //     color: Colors.white,
-                      //   ),
-                      //   height: 60,
-                      //   width: 390,
-                      //   child: const Text(
-                      //     "data",
-                      //     style: TextStyle(color: Colors.black),
-                      //   ),
-                      // ),
                       ElevatedButton.icon(
                         onPressed: () {},
-                        label: const Text("food"),
-                        
+                        label: const Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [Text("Earlier Today"), Text("data")],
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          fixedSize: const Size(
+                            360,
+                            50,
+                          ),
+                        ),
                       )
                     ],
                   ),
