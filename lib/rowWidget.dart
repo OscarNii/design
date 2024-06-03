@@ -10,7 +10,7 @@ class rowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.deepPurple,
         fixedSize: const Size(
           150,
           50,
