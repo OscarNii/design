@@ -63,11 +63,11 @@ class _HorizontalWeekCalendarPackageState
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(75),
-                  color: Colors.white,
+                  color: Colors.grey[300],
                 ),
                 height: 600,
                 width: double.infinity,
-                child:  Padding(
+                child: Padding(
                   padding: const EdgeInsets.all(25.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,7 +79,9 @@ class _HorizontalWeekCalendarPackageState
                           rowWidget1(),
                         ],
                       ),
-                      const SizedBox(height: 10,),
+                      const SizedBox(
+                        height: 10,
+                      ),
                       Container()
                     ],
                   ),
@@ -104,7 +106,7 @@ class _HorizontalWeekCalendarPackageState
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Colors.white,
+          color: Colors.grey[300],
         ),
         child: Padding(
           padding: const EdgeInsets.only(

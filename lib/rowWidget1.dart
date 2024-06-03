@@ -9,17 +9,18 @@ class rowWidget1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         fixedSize: const Size(
           150,
-          50,
+          60,
         ),
       ),
       onPressed: () {},
       child: const Text(
         "New(10)",
         style: TextStyle(
-          color: Colors.white,
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
           fontSize: 15,
         ),
       ),

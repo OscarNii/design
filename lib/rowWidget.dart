@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -23,6 +22,7 @@ class rowWidget extends StatelessWidget {
         style: TextStyle(
           color: Colors.white,
           fontSize: 15,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
