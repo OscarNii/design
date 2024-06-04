@@ -10,32 +10,53 @@ class rowDetails1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
       onPressed: () {},
-      label: const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Column(
+      label: const Padding(
+        padding: EdgeInsets.all(8.0),
+        child: SingleChildScrollView(
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Product Design \nDemo",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 17,
-                  )),
-              CircleAvatar(
-                radius: 20,
-                backgroundImage: AssetImage("assets/img1.jpg"),
-              )
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Product Design \nDemo",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17,
+                      )),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      CircleAvatar(
+                        radius: 20,
+                        backgroundImage: AssetImage("assets/img.jpg"),
+                        backgroundColor: Colors.black,
+                      ),
+                      CircleAvatar(
+                        radius: 20,
+                        backgroundImage: AssetImage("assets/img2.jpg"),
+                        backgroundColor: Colors.black,
+                      ),
+                      CircleAvatar(
+                        radius: 20,
+                        backgroundImage: AssetImage("assets/img3.jpg"),
+                        backgroundColor: Colors.black,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+              Text("12:00\n13:30")
             ],
           ),
-          Text("12:00\n13:30")
-        ],
+        ),
       ),
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,
         fixedSize: const Size(
           360,
-          90,
+          100,
         ),
       ),
     );
