@@ -1,10 +1,11 @@
+import 'package:design/rowDetails1.dart';
 import 'package:design/rowWidget1.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:horizontal_week_calendar/horizontal_week_calendar.dart';
 import 'package:intl/intl.dart';
 
+import 'firstRow.dart';
 import 'rowAI.dart';
 import 'rowWidget.dart';
 
@@ -28,10 +29,12 @@ class _HorizontalWeekCalendarPackageState
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: const Text(
-          "Horizontal Week Calendar",
-          style: TextStyle(
-            color: Colors.white,
+        title: const Center(
+          child: Text(
+            "Horizontal Test Week Calendar",
+            style: TextStyle(
+              color: Colors.white,
+            ),
           ),
         ),
       ),
@@ -67,36 +70,24 @@ class _HorizontalWeekCalendarPackageState
                 ),
                 height: 600,
                 width: double.infinity,
-                child: Padding(
-                  padding: const EdgeInsets.all(25.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(25.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Row(
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           rowWidget(),
                           rowWidget1(),
                         ],
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 10,
                       ),
-                      ElevatedButton.icon(
-                        onPressed: () {},
-                        label: const Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [Text("Earlier Today"), Text("data")],
-                        ),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          fixedSize: const Size(
-                            360,
-                            50,
-                          ),
-                        ),
-                      )
+                      firstRow(),
+                      SizedBox(height: 10),
+                      rowDetails1(),
                     ],
                   ),
                 ),

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -30,14 +29,10 @@ class rowAI extends StatelessWidget {
         SizedBox(
           width: 16.0,
         ),
-        Row(
-          children: [
-            Icon(
-              Icons.arrow_circle_right_rounded,
-              color: Colors.white,
-              size: 35.0,
-            ),
-          ],
+        Icon(
+          Icons.arrow_circle_right_outlined,
+          color: Colors.white,
+          size: 40.0,
         )
       ],
     );
