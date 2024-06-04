@@ -22,9 +22,9 @@ class rowDetails1 extends StatelessWidget {
                 children: [
                   Text("Product Design \nDemo",
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17,
-                      )),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17,
+                          color: Colors.white)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -47,13 +47,16 @@ class rowDetails1 extends StatelessWidget {
                   )
                 ],
               ),
-              Text("12:00\n13:30")
+              Text(
+                "12:00\n13:30",
+                style: TextStyle(color: Colors.white),
+              )
             ],
           ),
         ),
       ),
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.deepPurple,
         fixedSize: const Size(
           360,
           100,
