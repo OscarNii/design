@@ -13,7 +13,7 @@ class rowWidget extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
         fixedSize: const Size(
           150,
-          50,
+          60,
         ),
       ),
       onPressed: () {},
