@@ -72,23 +72,35 @@ class _HorizontalWeekCalendarPackageState
                 width: double.infinity,
                 child: const Padding(
                   padding: EdgeInsets.all(25.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          rowWidget(),
-                          rowWidget1(),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      firstRow(),
-                      SizedBox(height: 10),
-                      rowDetails1(),
-                    ],
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            rowWidget(),
+                            rowWidget1(),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        firstRow(),
+                        SizedBox(height: 10),
+                        rowDetails1(),
+                        SizedBox(height: 10),
+                        rowDetails1(),
+                        SizedBox(height: 10),
+                        rowDetails1(),
+                        SizedBox(height: 10),
+                        rowDetails1(),
+                        SizedBox(height: 10),
+                        rowDetails1(),
+                        SizedBox(height: 10),
+                        rowDetails1(),
+                      ],
+                    ),
                   ),
                 ),
               )
