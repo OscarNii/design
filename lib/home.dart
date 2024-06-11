@@ -1,7 +1,7 @@
 import 'package:design/rowDetails1.dart';
+import 'package:design/rowDetails2.dart';
 import 'package:design/rowWidget1.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:horizontal_week_calendar/horizontal_week_calendar.dart';
 import 'package:intl/intl.dart';
 
@@ -90,19 +90,24 @@ class _HorizontalWeekCalendarPackageState
                         SizedBox(height: 10),
                         rowDetails1(),
                         SizedBox(height: 10),
-                        rowDetails1(),
+                        rowDetails2(),
                         SizedBox(height: 10),
                         rowDetails1(),
                         SizedBox(height: 10),
-                        rowDetails1(),
+                        rowDetails2(),
                         SizedBox(height: 10),
                         rowDetails1(),
                         SizedBox(height: 10),
-                        rowDetails1(),
+                        rowDetails2(),
                       ],
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                "data",
+                style: TextStyle(color: Colors.white),
               )
             ],
           ),
